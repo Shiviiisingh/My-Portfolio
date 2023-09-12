@@ -555,6 +555,10 @@ footer {
         font-size: 18px; /* Set your desired font size */
     }
 
+    .project p, .project h3, .project ul{
+        padding: 0.4rem 6rem;
+    }
+
     #close-icon-container {
         display: block; /* Display the close icon on screens <= 947px */
         cursor: pointer;
@@ -606,7 +610,8 @@ footer {
 }
 
 .project p,.project h3, .project ul{
-    padding: 0rem 5rem;
+    /* padding: 0rem 5rem; */
+    padding: 0rem 1rem;
     font-size: 1rem;
 }
 
