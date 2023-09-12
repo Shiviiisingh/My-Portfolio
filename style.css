@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+scroll-behavior: smooth;    
+}
+
+body {
+    background-color: #0b0c10;
+}
+
+
+.scroll {
+    position: fixed;
+    background: #66fcf1;
+    height: 2rem;
+    width: 2rem;
+    scroll-behavior: smooth;
+    right: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    z-index: 9999;
+    font-size: 2rem;
+    border-radius: 30%;
+    border-bottom-width: 2rem;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scrollshow {
+    bottom: 2rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.header {
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-size: 2.2vw;
+    text-decoration: none;
+    color: #66fcf1;
+    font-family: sans-serif;
+}
+
+#menu-icon-container,#close-icon-container {
+    display: none;
+}
+
+#navbar li {
+    display: inline-block;
+    font-size: 1.4vw;
+    padding: 1.6vw;
+}
+
+#navbar li a {
+    color: #45a29e;
+    text-decoration: none;
+}
+
+#navbar li a:hover,
+#navbar a.active {
+    color: #66fcf1;
+}
+
+#hero {
+    padding-top: 13vw;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro img {
+    height: 230px;
+    height: 15vw;
+    border-radius: 50%;
+    border: 4px solid #c5c6c7;
+}
+
+.cta h1 {
+    padding: 1vw 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 4vw;
+    color: #45a29e;
+}
+
+.cta p {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5vw;
+    color: #c5c6c7;
+}
+
+.cta-btn {
+    padding: 1.5vw;
+}
+
+#cta-btn {
+    border: 2px solid #45a29e;
+    font-family: 'Baloo Bhai 2', 'cursive';
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cta-btn:hover {
+    background-color: #45a29e;
+}
+
+#about {
+    font-family: 'Bree Serif', serif;
+    padding: 6em;
+}
+
+#about h1 {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+.about {
+    background-color: #fff;
+    color: #0b0c10;
+    text-align: justify;
+    padding: 2rem 4rem;
+    width: 65%;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+.social {
+    position: relative;
+    left: 4rem;
+    border: 4px solid #45a29e;
+    width: 25%;
+    margin: 8rem 0;
+    height: 21rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.social #cta-btn {
+    margin: 1rem;
+}
+
+.social .icons {
+    position: relative;
+    top: 0.2rem;
+    margin: 0.2rem;
+    height: 25px;
+    width: 25px;
+    font-size: 1.8rem;
+}
+
+hr {
+    color: #c5c6c7;
+    position: relative;
+    right: 8rem;
+    margin: 0 12rem;
+
+}
+
+#project {
+    font-family: 'Bree Serif', serif;
+
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+#project h1 {
+    font-family: 'Lato', sans-serif;
+    padding: 4rem;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 12rem;
+    padding-bottom: 4rem;
+}
+
+.project h2 {
+    color: #45a29e;
+    padding: 1rem;
+}
+
+.project p,
+.project h3,
+.project ul {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+    padding: 0.4rem 15rem;
+    text-align: justify;
+}
+
+#skills {
+    font-family: 'Bree Serif', serif;
+
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#skills h1 {
+    font-family: 'Lato', sans-serif;
+    padding: 4rem;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+#skills ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.skills {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    padding: 1.5vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+    font-size: 2rem;
+
+    width: 50%;
+    
+}
+
+.skills-last {
+    border-bottom: 1px solid #888;
+    padding-bottom: 1.5vw;
+}
+
+
+.skills-icon {
+    font-size: 75px;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Added transform property */
+}
+
+.skill:hover .skill-icon {/* Position the icon absolutely within the skill container */
+    opacity: 1;
+}
+
+#education {
+
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+#education h1 {
+    padding: 4rem;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+#education .edu {
+    color: #fff;
+    padding: 1.5rem;
+}
+
+#education .edu h2 {
+    font-size: 2rem;
+}
+
+#education .edu p {
+    font-size: 1.5rem;
+}
+
+
+#contact {
+    border: 30px solid #45a29e;
+    background-image: url(img/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#contact h1 {
+    font-family: 'Lato', sans-serif;
+    padding: 4rem;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+#contact p {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contact_bg {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+    justify-content: space-around;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact h2 {
+    font-family: 'Lato', sans-serif;
+
+    color: #fff;
+    padding-top: 6rem;
+    font-size: 1.5rem;
+}
+
+.contact ul {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+    padding: 0.4rem 0rem;
+    text-align: justify;
+    list-style: none;
+    margin: 0 4rem;
+}
+
+.contact li {
+    margin: 2rem 0;
+    text-decoration: none;
+}
+
+.contact li
+a {
+    color: #fff;
+    margin: 2rem 0;
+    text-decoration: none;
+}
+
+.contact li .con-icon {
+    position: relative;
+    top: 0.2rem;
+}
+
+.contact-form {
+    /* border: 2px solid #888; */
+    height: auto;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contact-form h2 {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.contact-form label {
+    color: #fff;
+    margin: 2rem 0 1rem 0;
+}
+
+.contact-form input {
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px #888;
+    padding: 0.4rem;
+    position: relative;
+    margin: 0rem 4rem;
+}
+
+.contact-form textarea {
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px #888;
+    padding: 3rem 0;
+    position: relative;
+    margin: 0rem 4rem;
+}
+
+.contact-form button {
+    font-size: 1rem;
+    border-radius: 15px;
+    font-family: 'Baloo Bhai 2', 'cursive';
+    margin: 2rem 10rem;
+    padding: 0.4rem;
+    font-size: 20px;
+    cursor: pointer;
+
+    border: 2px solid #45a29e;
+    background-color: black;
+    color: #fff;
+}
+
+.contact-form button:hover {
+    background-color: #66fcf1;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+
+@media (max-width:1104px) {
+    .about-content{
+        padding: 2rem;
+    }
+    .about-content .social {
+        width: 275px;
+        height: 275px;
+        margin: 15rem 0rem;
+    }
+    #about, .about{
+        padding: 1rem;
+    }
+
+    .project {
+       
+        padding: 0 2rem;
+       
+    }
+}
+
+@media (max-width:991px) {
+
+    #hero .cta-btn{
+        padding: 3.5vw;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .about-content .social{
+        position: relative;
+        top: -12rem;
+        left: 0rem;
+    }
+   .about-content .about{
+    position: relative;
+    
+    top: -24rem;
+    margin-bottom: -22rem;
+   }
+
+    .contact-form input, .contact-form textarea{
+        margin: 0 1rem;
+    }
+
+    .contact-form button{
+        margin: 2rem 6rem;
+    }
+}
+
+@media (max-width:947px) {
+    .logo{
+        padding: 1rem 0;
+    }
+
+    #menu-icon-container {
+        display: block; /* Display the menu icon on screens <= 947px */
+        cursor: pointer;
+        color: #45a29e;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: -80%; /* Adjust the initial position of the menu */
+        width: 100%; /* Adjust the width as needed */
+        height: 100%;
+        background-color: #333; /* Set your desired background color */
+        overflow-y: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #navbar.sidebar {
+        left: 0; /* Show the menu by moving it to the left */
+        height: 100vh;
+    }
+
+    #navbar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #navbar ul li {
+        padding: 10px;
+        text-align: center;
+        display: block;
+        padding: 2rem;
+    }
+
+    #navbar ul li a {
+        text-decoration: none;
+        color: #fff; /* Set your desired text color */
+        font-size: 18px; /* Set your desired font size */
+    }
+
+    #close-icon-container {
+        display: block; /* Display the close icon on screens <= 947px */
+        cursor: pointer;
+        color: #000;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .cta-btn{
+        padding: 2.5vw;
+    }
+
+    .contact_bg{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:690px) {
+     #cta-btn{
+    
+    font-size: 15px;
+    
+}
+
+#about h1,#project h1, #skills h1,#education h1, #contact h1{
+    font-size: 2.5rem;
+}
+
+.about-content{
+    position: relative;
+    top: -2rem;
+}
+
+.about-content .social{
+    border: none;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    flex-direction: row;
+}
+
+.about-content .about{
+    width: 85%;
+}
+
+.about p{
+    font-size: 1rem;
+}
+
+.project p,.project h3, .project ul{
+    padding: 0rem 5rem;
+    font-size: 1rem;
+}
+
+#education .edu{
+    padding: 1.2rem;
+}
+
+#education .edu h2{
+    font-size: 1.6rem;
+}
+#education .edu p{
+    font-size: 1.4rem;
+}
+
+#contact p{
+    font-size: 1.2rem;
+}
+
+.contact h2{
+    padding-top: 2rem;
+}
+
+.contact-form{
+    width: 50vw;
+}
+}
+
+@media (max-width:500px) {
+    .logo, #menu-icon{
+        font-size: 1rem;
+    }
+    .intro img{
+        height: 10rem;
+    }
+    .cta h1{
+        font-size: 2rem;
+    }
+    #cta-btn{
+        font-size: 10px;
+    }
+    .cta p{
+        font-size: 1rem;
+    }
+
+    #about h1, #project h1, #skills h1, #education h1, #contact h1{
+        font-size: 2rem;
+    }
+
+    .social .icons {
+        position: relative;
+        top: 0.1rem;
+        margin: 0.1rem;
+        height: 18px;
+        width: 18px;
+        font-size: 1.2rem;
+    }
+
+    hr{
+        position: relative;
+        right: 1rem;
+        margin: 0rem 1.5rem;
+    }
+
+    .skills{
+        font-size: 1.5rem;
+    }
+    #education .edu h2{
+        font-size: 1.4rem;
+    }
+
+    #education .edu p{
+        font-size: 1.2rem;
+    }
+
+    .contact li .con-icon {
+        position: relative;
+        top: 0.1rem;
+        right: 0.1rem;
+    }
+    .contact-form{
+        width: 75vw;
+    }
+
+    .contact-form button{
+        font-size: 10px;
+    }
+
+    footer{
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+}
