@@ -675,6 +675,11 @@ footer {
         margin: 0rem 1.5rem;
     }
 
+    .project p,.project h3, .project ul{
+        /* padding: 0rem 5rem; */
+        padding: 0rem 1rem;
+        /* font-size: 1rem; */
+    }
     .skills{
         font-size: 1.5rem;
     }
